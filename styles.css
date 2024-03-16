@@ -1,0 +1,58 @@
+.trabajos {
+    margin: 1em;
+}
+.secciones{
+    display: flex;
+    align-content: center;
+    gap: 30px;
+    justify-content: center;
+    padding: 1em;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.trabajo {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    border: 1em solid white;
+    font-weight: 500;
+    color: #FF7744;
+}
+
+.p3 img,
+.p2 img,
+.p1 img {
+    width: 16em;
+    height: 7em;
+    border-radius: 20px;
+    display: flex;
+} 
+
+.tema1 h2,
+.tema2 h2,
+.tema3 h2 {
+    color: blue;
+    font-family: "Roboto", sans-serif;
+    height: 1em;
+    display: flex;
+}
+
+.contexto1,
+.contexto2,
+.contexto3 {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+    height: 18em;
+    width: 30em;
+    display: flex;
+}
+
+.contexto1 a,
+.contexto2 a,
+.contexto3 a {
+    display: flex;
+    color: #FF7744;
+    padding: 2em 0 2em 0;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <script src="https://kit.fontawesome.com/bcea3e283b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html"><i class="fa-solid fa-moon"></i></a>
+            <nav>
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                  <i class="fa-solid fa-bars"></i>
+                </label>
+                <nav class="navBar">
+                    <ul class="menu">
+                        <li>Inicio</li>
+                        <li>Acerca De Mi</li>
+                        <li>Servicios</li>
+                        <li>Trabajos</li>
+                        <li>Contacto</li>
+                    </ul>
+                </nav>
+            </nav>
+        </header>
+    </div>
+    <main id="seccion-principal">
+        <section class="seccion-1">
+            <div class="acerca-de">
+                <h2>Acerca de mí</h2>
+                <p class="parrafo1">¡Bienvenido a mi página! Aquí, aprenderás más sobre mí</p>
+                <p class="parrafo2">
+                Me llamo Sarai, nací en Ica y vivo en Pisco. Me gusta el escuchar musica y salir a pasear por la playa. Me encantaría aprender a programar para poder ayudar a las personas a mostrar lo que hacen
+                </p>
+            </div>
+            <div class="acerca-imagen">
+                <img src="img/hero.img" alt="imagen personal">
+            </div>
+        </section>
+        <section class="seccion-2">
+            <img src="img/playa.jpg" alt="imagen de carrusel">
+        </section>
+    </main>
+    <div class="trabajos">
+        <section id="titulo-trabajos">
+                <div class="trabajo">Trabajos</div>
+        </section>
+        <div class="secciones">
+            <div class="trabajo-1">
+                <div class="portada1">
+                    <div class="p1">
+                        <img src="img/startup.jfif" alt="startup">
+                    </div>
+                </div>
+                <div class="informacion1">
+                    <div class="tema1">
+                        <h2>Startup</h2>
+                    </div>
+                    <div class="contexto1">
+                        <h3>Una startup es una empresa de reciente creación, que se basa en las tecnologías de la información y la comunicación (TIC) para comercializar sus productos o servicios. Presenta un modelo de negocio escalable y su prioridad es crecer de manera ágil y rápida.
+                        <a href="index.html">Saber Mas...</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="trabajo-2">
+                <div class="portada2">
+                    <div class="p2">
+                        <img src="img/pagina-web.png" alt="pagina-web">
+                    </div>
+                </div>
+                <div class="informacion2"></div>
+                    <div class="tema2">
+                        <h2>Pagina web</h2>
+                    </div>
+                    <div class="contexto2">
+                        <h3>Una página web es un documento de la World Wide Web «con dirección propia».​ Las páginas web son entregadas por un servidor web al usuario y mostradas en un navegador web para que actúe como «unidad de recuperación» de la información almacenada en su interior.
+                        <a href="index.html">Saber Mas...</a>
+                        </h3>
+                    </div>
+            </div>
+            <div class="trabajo-3">
+                <div class="portada3">
+                    <div class="p3">
+                        <img src="img/programacion.jpg" alt="programacion-web">
+                    </div>
+                </div>
+                <div class="informacion3"></div>
+                    <div class="tema3">
+                        <h2>Otros</h2>
+                    </div>
+                    <div class="contexto3">
+                        <h3>Un desarrollador web crea sitios web utilizando varios lenguajes de programación. Sus responsabilidades incluyen el diseño de páginas web y el desarrollo de la funcionalidad del sitio para satisfacer las necesidades de los usuarios.
+                        <a href="index.html">Saber Mas...</a>
+                        </h3>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-form">
+        <div class="form-header">
+            <h1>Contacto</h1>
+            <p><em>¡Esperamos tu consulta!</em></p>
+            <form action="" method="get" class="formulario" id="form">
+                <div class="form-row">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text"/>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input 
+                        id="email" 
+                        name="email" 
+                        type="email"
+                        placeholder="admi@email.com"
+                        required
+                    />
+                </div>
+                <div class="form-row">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje"name="mensaje"></textarea>
+                </div>
+                <div class="form-row">
+                    <button>Enviar</button>
+                </div>
+                <p class="alertas" id="alertas"></p>
+            </form>
+        </div>
+    </div>
+    <footer id="contacto">
+        <div id="footer">
+            <a href="index.html"><i class="fa-solid fa-moon fixed"></i></a>
+            <h3 class="fuente-acento">Redes Sociales</h3>
+            <nav>
+                <ul>
+                    <li>
+                        <a href>Contacto</a>
+                    </li>
+                    <li>
+                        <a href>Instagram</a>
+                    </li>
+                    <li>
+                        <a href>Tik Tok</a>
+                    </li>
+                    <li>
+                        <a href>Whatsapp</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>

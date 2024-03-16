@@ -1,0 +1,361 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a { 
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    background-color: blue;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-right: 25px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    
+}
+
+@media (max-width: 768px) {
+    header {
+        background-color: cadetblue;
+    }
+  }
+
+header a i {
+    color: white;
+    font-size: 3em;
+    padding: 0.5em;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: white;
+    float: left;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    padding-right: 1em;
+}
+
+header nav ul.menu{
+    display: flex;
+    gap: 1.5em;
+    font-size: 1.5em;
+    padding-right: 1em;
+
+}
+
+header nav ul.menu li a{
+    color: black;
+}
+ /*MEDIA QUERY HEADER*/
+
+@media (max-width: 768px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    
+    .checkbtn {
+        display: block;
+    }
+
+    .navBar.active {
+         height: 100vh;
+    }
+        
+    .navBar {
+        height: 0vh;
+        position: absolute;
+        top: 92px;
+        left: 0;
+        bottom: 100%;
+        width: 100%;
+        background: #2c3e50;
+        text-align: center;
+    
+        transition: all 0.5s;
+        overflow: hidden;
+      }
+    
+      .navBar ul.menu {
+        float: none;
+        display: block;
+        width: 174px;
+        margin: 0 auto;
+        opacity: 0;
+      }
+
+      .navBar.active ul.menu {
+        opacity: 1;
+      }
+
+    /*.container header nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+
+        top: 70px;
+        bottom: 100%;
+        transition: 0.5s;
+    }*/
+
+    #check:checked ~ ul{
+        bottom: 0;
+        display: block;
+    }
+
+    .container header nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        flex-direction: column;
+        justify-content: flex-start; 
+        align-items: center;
+    }
+
+    .container header nav ul li{
+        font-size: 20px;
+        display: block;
+        width: 100%;
+    }
+
+    #check:checked ~ .checkbtn {
+        color: black;
+    }
+
+    .acerca-de h2 {
+        padding-top: 1em;
+    }
+
+    nav ul.menu {
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+}
+
+
+
+/*SECCION 1 Y 2 */
+
+.acerca-de h2 {
+    color: #FF7744;
+}
+
+.seccion-1 {
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    margin: 4em 9em 4em 9em;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .seccion-1 {
+        text-align: center;
+        flex-direction: column;
+    }
+  }
+
+.seccion-1 .acerca-imagen {
+    margin: 2em;
+}
+
+#seccion-principal .seccion-2 img {
+    width: 100%;
+}
+
+/*FORMULARIO ENCABEZADO*/
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-header {
+    text-align: center;
+    background-color: #2c3e50;
+    border: 1px solid black;
+    border-radius: 4px;
+
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+
+}
+
+.form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.form-header p {
+    color: white;
+}
+
+/*FORMULARIO*/
+
+.formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+}
+
+/*CAMPOS DEL FORMULARIO*/
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+}
+
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+
+    width: 100%;
+}
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+
+    color: #ffffff;
+    background-color:#5995da;
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 10px 40px;
+    cursor: pointer;
+
+}
+
+.form-row button:hover {
+    background-color: #76aeed;
+}
+
+.form-row button:active {
+    background-color:  #407fc7;
+}
+
+/* ------------- Media Query para pantallas de más de 700px de resolución ------------- */
+@media only screen and (min-width: 700px) {
+    
+    .form-header {
+        padding: 50px;
+    }
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .form-row input[type="text"],
+    .form-row input[type="email"] {
+        width: 250px;
+        height: initial;
+    }
+    .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+    }
+    .form-row textarea {
+        width: 250px;
+    }
+    .form-row button {
+        margin-left: 140px; 
+    }
+}
+
+
+/*FOOTER*/
+footer {
+    background-color: blue;
+    color: burlywood;
+    padding-left: 2em;
+}
+
+#footer {
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+}
+
+#footer nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#footer nav ul li a {
+    color: white;
+}
+
+h3 {
+    display: block;
+    margin: 1em 0px 1em 0px;
+}
+
+a i.fa-solid.fa-moon.fixed {
+    position: fixed;
+    bottom: 22px;
+    right: 39px;
+    font-size: 35px;
+    color: burlywood;
+}
